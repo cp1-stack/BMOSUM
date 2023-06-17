@@ -1,0 +1,43 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{rotating}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+\multirow{2}{*}{\begin{turn}{90}
+Distribution
+\end{turn}} & \multirow{2}{*}{\begin{turn}{90}
+Type
+\end{turn}} & \multicolumn{2}{c|}{p=10} & \multicolumn{2}{c|}{p=300} & \multicolumn{2}{c|}{p=600}\tabularnewline
+\cline{3-8} \cline{4-8} \cline{5-8} \cline{6-8} \cline{7-8} \cline{8-8} 
+ &  & k=20 & k=30 & k=20 & k=30 & k=20 & k=30\tabularnewline
+\hline 
+\multirow{3}{*}{Gaussian} & iid & 0.038 & 0.038 & 0.017 & 0.051 & 0.027 & 0.035\tabularnewline
+\cline{2-2} 
+ & md & 0.041 & 0.042 & 0.039 & 0.039 & 0.033 & 0.037\tabularnewline
+\cline{2-2} 
+ & sd & 0.030 & 0.024 & 0.029 & 0.023 & 0.021 & 0.025\tabularnewline
+\cline{1-2} \cline{2-2} 
+\multirow{3}{*}{$t_{6}$} & iid & 0.035 & 0.037 & 0.031 & 0.045 & 0.035 & 0.041\tabularnewline
+\cline{2-2} 
+ & md & 0.041 & 0.034 & 0.023 & 0.034 & 0.034 & 0.061\tabularnewline
+\cline{2-2} 
+ & sd & 0.034 & 0.027 & 0.024 & 0.031 & 0.028 & 0.022\tabularnewline
+\hline 
+\end{tabular}
+\end{document}
